@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{084CE25E-72AA-192A-59BE-C04AE6DB9F83}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0f2e31fe-33de-4b80-a4bb-fd7119041313" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/RobotController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/RobotController.cs" Line="27" Column="45" />
+      <File FileName="Assets/Scripts/bombController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BombMaker.cs" Line="23" Column="10" />
+      <File FileName="Assets/Scripts/HPController.cs" Line="15" Column="50" />
+      <File FileName="Assets/Scripts/SceneControl.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="2D Project_009" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True" />
+              <Node name="Standard Assets" expanded="True">
+                <Node name="Utility" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
