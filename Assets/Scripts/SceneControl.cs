@@ -6,13 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class SceneControl : MonoBehaviour
 {
-    //GameObject sc;
+    GameObject gm;
 
     public Text text;
 
     private void Awake()
     {
-        //text.text = "최종 점수 : " + sc.GetComponent<ScoreController>().GetScore().ToString();
+        gm = GameObject.Find("GameManager");
+        text.text = "최종 점수 : " + gm.gameObject.GetComponent<GameManager>().GetScore().ToString();
     }
 
     private void Update()

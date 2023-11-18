@@ -35,19 +35,29 @@ public class RobotController : MonoBehaviour
             {
                 robotRD.AddForce(transform.right * -1 * walkSpeed);
                 transform.localScale = new Vector3(-1.0f, 1.0f, 1);
-                animator.SetTrigger("WalkCall");
+                animator.SetBool("WalkCall", true);
             }
-            else if (Input.GetKeyUp(KeyCode.A)) animator.SetTrigger("IdleCall");
 
             if (Input.GetKey(KeyCode.D))
             {
                 robotRD.AddForce(transform.right * walkSpeed);
                 transform.localScale = new Vector3(1.0f, 1.0f, 1);
-                animator.SetTrigger("WalkCall");
+                animator.SetBool("WalkCall", true);
             }
-            else if (Input.GetKeyUp(KeyCode.D)) animator.SetTrigger("IdleCall");
+
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                walkSpeed = 15f;
+                animator.SetBool("RunCall", true);
+            }
+
+            if ((!Input.GetKey(KeyCode.A)) && (!Input.GetKey(KeyCode.D)))
+            {
+                walkSpeed = 10f;
+                animator.SetBool("RunCall", false);
+                animator.SetBool("WalkCall", false);
+            }
         }
-        //animator.speed = speedx / 3.0f;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

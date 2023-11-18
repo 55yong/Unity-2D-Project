@@ -8,11 +8,14 @@ public class TitleController : MonoBehaviour
 {
     public Button startBtn;
     public Button infoBtn;
+    public Button keyInfoBtn;
     public Button exitBtn;
     public Button showInfoBtn;
+    public Button showKeyInfoBtn;
 
     public GameObject TitleObj;
     public GameObject InfoObj;
+    public GameObject KeyInfoObj;
 
     private void Awake()
     {
@@ -34,6 +37,12 @@ public class TitleController : MonoBehaviour
             InfoObj.SetActive(true);
         });
 
+        keyInfoBtn.onClick.AddListener(() =>
+        {
+            TitleObj.SetActive(false);
+            KeyInfoObj.SetActive(true);
+        });
+
         exitBtn.onClick.AddListener(() =>
         {
             #if UNITY_EDITOR
@@ -48,6 +57,14 @@ public class TitleController : MonoBehaviour
         showInfoBtn.onClick.AddListener(() =>
         {
             InfoObj.SetActive(false);
+            TitleObj.SetActive(true);
+        });
+        #endregion
+
+        #region KeyInfoObject
+        showKeyInfoBtn.onClick.AddListener(() =>
+        {
+            KeyInfoObj.SetActive(false);
             TitleObj.SetActive(true);
         });
         #endregion

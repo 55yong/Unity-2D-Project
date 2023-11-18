@@ -386,6 +386,7 @@
 "Assets/Scripts/Bomb/BombMaker.cs"
 "Assets/Scripts/Coin/CoinController.cs"
 "Assets/Scripts/Coin/CoinMaker.cs"
+"Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Robot/HPController.cs"
 "Assets/Scripts/Robot/RobotController.cs"
 "Assets/Scripts/Rock/RockController.cs"

@@ -19,11 +19,6 @@ public class BombController : MonoBehaviour
         {
             hp.GetComponent<HPController>().HpControl();
         }
-        
-        //if(collision.gameObject.tag == "Ground")
-        //{
-        //    sc.GetComponent<ScoreController>().AddScore();
-        //}
         Destroy(gameObject);
     }
 }

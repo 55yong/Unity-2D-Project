@@ -6,24 +6,17 @@ using UnityEngine.UI;
 public class ScoreController : MonoBehaviour
 {
     public Text scoreObj;
-    private int score;
+
+    GameObject gm;
 
     private void Start()
     {
-        score = 0;
-
-        DontDestroyOnLoad(gameObject);
+        gm = GameObject.Find("GameManager");
     }
 
-    // Update is called once per frame
     public void AddScore()
     {
-        score += 1;
-        scoreObj.text = "Score : " + score.ToString();
-    }
-
-    public int GetScore()
-    {
-        return score;
+        gm.gameObject.GetComponent<GameManager>().SetScore();
+        scoreObj.text = "Score : " + gm.gameObject.GetComponent<GameManager>().GetScore().ToString();
     }
 }
