@@ -1,22 +1,24 @@
 ﻿<Properties StartupConfiguration="{084CE25E-72AA-192A-59BE-C04AE6DB9F83}|">
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0f2e31fe-33de-4b80-a4bb-fd7119041313" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/RobotController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ScoreController.cs">
     <Files>
-      <File FileName="Assets/Scripts/RobotController.cs" Line="27" Column="45" />
-      <File FileName="Assets/Scripts/bombController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/BombMaker.cs" Line="23" Column="10" />
-      <File FileName="Assets/Scripts/HPController.cs" Line="15" Column="50" />
-      <File FileName="Assets/Scripts/SceneControl.cs" />
+      <File FileName="Assets/Scripts/RobotController.cs" Line="48" Column="42" />
+      <File FileName="Assets/Scripts/HPController.cs" />
+      <File FileName="Assets/Scripts/SceneControl.cs" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Utility/EventSystemChecker.cs" Line="22" Column="1" />
+      <File FileName="Assets/Scripts/BombMaker.cs" Line="24" Column="6" />
+      <File FileName="Assets/Scripts/RockMaker.cs" Line="22" Column="19" />
+      <File FileName="Assets/Scripts/bombController.cs" Line="24" Column="1" />
+      <File FileName="Assets/Scripts/RockController.cs" Line="11" Column="36" />
+      <File FileName="Assets/Scripts/ScoreController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="2D Project_009" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="ScoreController.cs" selected="True" />
+              </Node>
               <Node name="Standard Assets" expanded="True">
                 <Node name="Utility" expanded="True" />
               </Node>
@@ -26,6 +28,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8f890b36-9c0d-4d34-87e3-5d2408830993" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

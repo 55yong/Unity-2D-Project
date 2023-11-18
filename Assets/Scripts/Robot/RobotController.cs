@@ -9,10 +9,12 @@ public class RobotController : MonoBehaviour
 
     private float walkSpeed = 10f;
     private float maxSpeed = 3f;
-    private float jumpPower = 5f;
+    private float jumpPower = 3f;
+    private bool isJump;
 
     void Start()
     {
+        isJump = false;
         robotRD = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
@@ -21,7 +23,7 @@ public class RobotController : MonoBehaviour
     {
         float speedx = Mathf.Abs(robotRD.velocity.x);
 
-        if ((Input.GetKey(KeyCode.Space)) && (transform.position.y <= -3.690f))
+        if ((Input.GetKey(KeyCode.Space)) && isJump)
         {
             robotRD.AddForce(transform.up * jumpPower, ForceMode2D.Impulse);
             animator.SetTrigger("JumpCall");
@@ -46,5 +48,21 @@ public class RobotController : MonoBehaviour
             else if (Input.GetKeyUp(KeyCode.D)) animator.SetTrigger("IdleCall");
         }
         //animator.speed = speedx / 3.0f;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
+            isJump = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
+            isJump = false;
+        }
     }
 }

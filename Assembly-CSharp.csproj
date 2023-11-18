@@ -58,19 +58,25 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.7f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/ScoreController.cs" />
     <Compile Include="Assets/SampleScenes/Menu/Scripts/PauseMenu.cs" />
+    <Compile Include="Assets/Scripts/Robot/RobotController.cs" />
+    <Compile Include="Assets/Scripts/Rock/RockMaker.cs" />
+    <Compile Include="Assets/Scripts/Coin/CoinController.cs" />
     <Compile Include="Assets/Scripts/SceneControl.cs" />
-    <Compile Include="Assets/Scripts/BombController.cs" />
     <Compile Include="Assets/SampleScenes/Scripts/LevelReset.cs" />
-    <Compile Include="Assets/Scripts/BombMaker.cs" />
+    <Compile Include="Assets/Scripts/Bomb/BombController.cs" />
     <Compile Include="Assets/SampleScenes/Menu/Scripts/SceneAndURLLoader.cs" />
+    <Compile Include="Assets/Scripts/Robot/HPController.cs" />
     <Compile Include="Assets/SampleScenes/Scripts/PlaceTargetWithMouse.cs" />
     <Compile Include="Assets/SampleScenes/Scripts/ParticleSceneControls.cs" />
-    <Compile Include="Assets/Scripts/HPController.cs" />
-    <Compile Include="Assets/Scripts/RobotController.cs" />
+    <Compile Include="Assets/Scripts/Bomb/BombMaker.cs" />
+    <Compile Include="Assets/Scripts/Rock/RockController.cs" />
+    <Compile Include="Assets/Scripts/Coin/CoinMaker.cs" />
     <Compile Include="Assets/SampleScenes/Menu/Scripts/MenuSceneLoader.cs" />
     <Compile Include="Assets/SampleScenes/Scripts/SlowMoButton.cs" />
     <Compile Include="Assets/SampleScenes/Scripts/CameraSwitch.cs" />
+    <Compile Include="Assets/Scripts/TitleController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/SampleScenes/Shaders/Skybox-Procedural.shader" />
@@ -816,6 +822,9 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
